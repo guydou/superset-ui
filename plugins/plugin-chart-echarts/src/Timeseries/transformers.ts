@@ -109,6 +109,7 @@ export function transformSeries(
     // @ts-ignore
     type: plotType,
     smooth: seriesType === 'smooth',
+    maxBarWidth: 12,
     // @ts-ignore
     step: ['start', 'middle', 'end'].includes(seriesType as string) ? seriesType : undefined,
     stack: stackId,
